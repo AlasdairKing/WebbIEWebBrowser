@@ -1,0 +1,913 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebbIE4
+</name>
+</assembly>
+<members>
+<member name="T:WebbIE4.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.ajaxfocus">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.back">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.crop1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.done">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.forward">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.heading">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.home">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.home1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.locationrefresh">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.progress0">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.progress1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.progress2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.progress3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.progress4">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.progress5">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.progress6">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.progress7">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.progress8">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.progress9">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.refresh">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.rss">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.rss_audio">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.search">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.skiplinks">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.start">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.stop_image">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.timer_done">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.timer_done_big">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.timer1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.timer1_big">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.timer2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.timer2_big">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.timer3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.timer3_big">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.timer4">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.timer4_big">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.viewie">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.viewie1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.webbie4">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.webbie41">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WebbIE4.My.Resources.Resources.working">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="M:WebbIE4.CrossFrameIE.GetDocumentFromWindow(mshtml.IHTMLWindow2)">
+ <summary>
+ Get the COM HTML Document from the IHTMLWindow2 you've got. 
+ </summary>
+ <param name="htmlWindow"></param>
+ <returns>Nothing, or the mshtml.IHTMLDocument2 object.</returns>
+</member>
+<member name="M:WebbIE4.frmLinks.PopulateList(System.Boolean@)">
+ <summary>
+ Populates the list of links from the gLinks or gSortedLinks array.
+ </summary>
+ <param name="newList"></param>
+ <remarks></remarks>
+</member>
+<member name="F:WebbIE4.frmMain.BLANK_LINE_MARKER">
+ <summary>
+ Indicates that there should be a blank line at this point in the output. 
+ </summary>
+</member>
+<member name="F:WebbIE4.frmMain.mCropped">
+ <summary>
+ Indicates that the page has had links etc. stripped from it when set.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.ProcessAfterLoad">
+ <summary>
+ Page navigation is complete (enough) so call this to render the page. 
+ </summary>
+</member>
+<member name="M:WebbIE4.frmMain.GotoHeadline(System.Int32)">
+ <summary>
+ Move cursor to the next headline
+ </summary>
+ <param name="direction"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.GotoLineStarting(System.String@,System.Int32@,System.Boolean@)">
+ <summary>
+ Moves cursor to line beginning with startsWith. Returns true if found.
+ </summary>
+ <param name="startsWith"></param>
+ <param name="direction"></param>
+ <param name="wrap"></param>
+ <returns>true if line starting with startsWith found</returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.LineIsForm(System.String@)">
+ <summary>
+ returns true if the line is a form element, false if not
+ </summary>
+ <param name="line"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.LineIsText(System.String@)">
+ <summary>
+ returns true if the line is text, false if it is a link or form element or similar: used by mnuViewCroppage
+ </summary>
+ <param name="line"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.CropPage">
+ <summary>
+ strip out link content from the page, hopefully leaving only main content: may trim out link content
+ occuring as part of main content, but should remove all the navigation info
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.CropOriginalPage">
+ <summary>
+ 'crops the original text page according to the pre-3.2 mechanisms. This supports pages with
+ lots of IFRAMES and other contructs that prevent me reparsing the page
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.UpgradeSettings">
+ <summary>
+ UpgradeSettings. This function migrates your application's settings from the previous
+    /// version, if any, to this one. This is because Properties.Settings are saved to a 
+    /// different user folder with every version, so unless you explicitly call this function
+    /// then user settings will be lost with every upgrade.
+    /// You must create a String setting called "LastVersionRun"
+    /// Alasdair 11 June 2013
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.DoHome">
+ <summary>
+ Go to homepage
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.mnuNavigateBack_Click(System.Object,System.EventArgs)">
+ <summary>
+ User selects back option from menu
+ </summary>
+ <param name="eventSender"></param>
+ <param name="eventArgs"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.GetValidFilename(System.String@)">
+ <summary>
+ Convert invalid filenames into valid DOS names.
+ </summary>
+ <param name="inputFilename"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.FindNext">
+ <summary>
+ Find the next instance of a word searched for by the user and select it. Display a message if not found. If no word to search for, call FindText()
+ </summary>
+</member>
+<member name="M:WebbIE4.frmMain.ListLinks">
+ <summary>
+ Prepare the links from the current page and show the lstLinks form to let
+ the user select one.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.DoWebSearch">
+ <summary>
+ Pop up a box to prompt user for a search phrase for google
+ </summary>
+</member>
+<member name="M:WebbIE4.frmMain.ParseDocument">
+ <summary>
+ Process the loading HTML object model and display it as text. Call this after refresh, page navigation, or any time
+ you need to update this view to reflect a change to the DOM.
+ </summary>
+</member>
+<member name="M:WebbIE4.frmMain.ParseChildren(mshtml.IHTMLDOMNode,System.Boolean,System.String)">
+ <summary>
+ Iterate through the children of node, sending them to ParseNode to get parsed.
+ </summary>
+ <param name="node"></param>
+ <param name="addNewlines"></param>
+ <param name="orderedListPrefix"></param>
+</member>
+<member name="M:WebbIE4.frmMain.StopBrowsers">
+ <summary>
+ stops all browser activity and ticking
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.UpdateTextarea(System.String@,mshtml.IHTMLDOMNode@)">
+ <summary>
+ update the current text area
+ </summary>
+ <param name="elementText"></param>
+ <param name="node"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.UpdateSelection(System.Int32@,System.Int32@)">
+ <summary>
+ Updates the selected item with the selected option.
+ </summary>
+ <param name="selectNumber"></param>
+ <param name="optionNumber"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.StartNavigating(System.String@)">
+ <summary>
+ Called when WebbIE needs to go somewhere new
+ </summary>
+ <param name="url"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.ProcessPage">
+ <summary>
+ Call when page is loaded, including all frames
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.UpdateMenus">
+ <summary>
+ Updates (enables or disables) menu items and buttons to reflect the state of the application.
+ Called (for example) by RefreshCurrentPage after it has run.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.SelectCurrentParagraph">
+ <summary>
+ Selects the current paragraph: call this after SkipLinks or similar
+ to give a visual representation of where we're up to.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.SetupTabs">
+ <summary>
+ corrects the tabstops on the main form. Call during Form_Load
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.IdentifyHeadings(mshtml.IHTMLElement@)">
+ <summary>
+ checks document for headings, if any, and populates headingLevel with the
+ tag to get for the highest-priority heading
+ </summary>
+ <param name="element"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.FindInputElement(mshtml.IHTMLElement@)">
+ <summary>
+ Returns the element that is a child of e (or e itself) that is an input/form element, 
+ or Nothing if not found.
+ </summary>
+ <param name="e"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.txtText_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ Allow users to follow a particular link by number
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.UserPressedReturn">
+ <summary>
+ This handles user interaction with the txtText area - in other words, txtText_KeyPress.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.DoDelayedRefresh">
+ <summary>
+ Call this to turn on a delayed refresh of the display: that is, it'll use a time to wait a bit then
+ do a screen refresh UNLESS a page navigation has commenced in the meantime. 
+ </summary>
+</member>
+<member name="M:WebbIE4.frmMain.IsValidEmail(System.String,System.String@)">
+ <summary>
+ Takes a proposed email address and does some simple checks that it is valid, returning true/false
+ and an informative error message. Does NOT comply with the appropriate RFC. 
+ </summary>
+ <param name="emailAddress"></param>
+ <param name="failureMessage"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMain.tmrDelayLoadBookmarks_Tick(System.Object,System.EventArgs)">
+ <summary>
+ Starts off the "load the bookmarks and populate the bookmarks menu" process, which is really slow
+ because of all the menu work. So start the timer after loading so the program starts faster and
+ THEN loads in all the bookmark menu.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="F:WebbIE4.frmMain.mTeamViewerPath">
+ <summary>
+ Used in mnuHelpTeamviewer_Click to store where TeamViewerQS.exe will be saved to (so when
+ it has downloaded it can be run.)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMediaControl.AllSrcAttributesAreData(System.Windows.Forms.HtmlElement)">
+ <summary>
+ If the current audio of video element and its source children are all data elements, 
+ return false.
+ </summary>
+ <param name="e"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmMediaControl.btnOpen_Click(System.Object,System.EventArgs)">
+ <summary>
+ Launch the media content in the machine's default player.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="T:WebbIE4.frmWeb">
+ <summary>
+ Hosts the WebBrowser object and handles detection of page navigation. 
+ </summary>
+</member>
+<member name="F:WebbIE4.frmWeb._mObjWind">
+ <summary>
+1 For suppressing JavaScript errors. http://support.microsoft.com/?kbid=279535.
+2 For detecting the end of navigation.
+ </summary>
+</member>
+<member name="F:WebbIE4.frmWeb.mObjEvent">
+ <summary>
+ Used to trap and hide JavaScript errors. <see cref="M:WebbIE4.frmWeb.mObjWind_onerror(System.String,System.String,System.Int32)"/> 
+ </summary>
+</member>
+<member name="F:WebbIE4.frmWeb.mFallbackToDocumentComplete">
+ <summary>
+ If set, then when webMain fires DocumentComplete, process
+ the page. It's better to rely on mObjEvent, but that fails sometimes - I don't know why, and it might
+ be an artifact of running in the debugger.
+ </summary>
+</member>
+<member name="M:WebbIE4.frmWeb.webMain_Navigated(System.Object,System.Windows.Forms.WebBrowserNavigatedEventArgs)">
+ <summary>
+ "Occurs when the WebBrowser control has navigated to a new document and has begun loading it."
+ This function tries to identify when a navigation starts and capture the necessary references
+ so that I tell get when the Javascript onLoad event fires, not just when the WebBrowser
+ object finishes navigating. This allows for better Javascript support.
+ If something goes wrong then set mFallbackToDocumentComplete to true and get out.
+ </summary>
+ <param name="eventSender"></param>
+ <param name="eventArgs"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmWeb.mObjWind_onload">
+ <summary>
+ The first of two mechanisms for detecting the end of navigation, meaning we should call <see>frmMain.ProcessAfterLoad()</see>. Based on 
+ the JavaScript onload event. 
+ </summary>
+</member>
+<member name="M:WebbIE4.frmWeb.webMain_Navigating(System.Object,System.Windows.Forms.WebBrowserNavigatingEventArgs)">
+ <summary>
+ This fires when navigation commences, and fires for each frame or page.
+ https://msdn.microsoft.com/en-us/library/system.windows.forms.webbrowser.navigating(v=vs.110).aspx
+ </summary>
+ <param name="eventSender"></param>
+ <param name="eventArgs"></param>
+ <remarks>It does (did) lots of stuff in WebbIE 3, like handling internal links. But this is all buggy 
+ and hard, so I'm trying to fix it by simplifying. </remarks>
+</member>
+<member name="M:WebbIE4.frmWeb.tmrCheckForEscape_Tick(System.Object,System.EventArgs)">
+ <summary>
+ This is a fall-back because some web pages - e.g. YouTube, so probably pages with Flash - will
+ grab the key input and won't let the form get the keypress. So use the Windows API to check for
+ the key and close the window if Escape is pressed.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.frmWeb.tmrCheckForNavigationComplete_Tick(System.Object,System.EventArgs)">
+ <summary>
+ If the browser has finished navigating, but we have urls we haven't processed, then fire off processing.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:WebbIE4.modAccesskeys.AddAccessKey(mshtml.IHTMLAnchorElement@)">
+ <summary>
+ Adds an access key to the current collection.
+ </summary>
+ <param name="anchor"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.modAccesskeys.GetURL(System.Int32@)">
+ <summary>
+ Returns the url for an access key, if any. Case insensitive.
+ </summary>
+ <param name="accessKey"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.modAPIFunctions.GetNumberOfLines(System.Windows.Forms.RichTextBox@)">
+ <summary>
+ Returns the number of lines in the control.
+ </summary>
+ <param name="editControl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.modAPIFunctions.GetCharacterIndexOfLine(System.Windows.Forms.RichTextBox@,System.Int32@)">
+ <summary>
+ Returns the number of characters in the control up to the numbered line
+ </summary>
+ <param name="editControl"></param>
+ <param name="lineNumber"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.modChangehomepage.SetStartPage(System.String@)">
+ <summary>
+ Calls SaveString with 4 parameters.
+ </summary>
+ <param name="url"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.modFormLabelHandler.ProcessWebpageForLabels(mshtml.HTMLDocument@)">
+ <summary>
+ Find any label elements in the page and populate the dictionary
+ </summary>
+ <param name="page"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.modFormLabelHandler.GetDescriptiveText(mshtml.IHTMLElement@)">
+ <summary>
+ Returns the descriptive text for a control.
+ </summary>
+ <param name="control"></param>
+ <returns></returns>
+ <remarks>Strictly, this should only use the id for a control. But, of course, people
+ won't code pages like that, so fall back to the name if no id. 
+returns empty string if not found
+</remarks>
+</member>
+<member name="F:WebbIE4.modGlobals.gShowFormsOnly">
+ <summary>
+ indicates that only form contents should be parsed and shown.
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.gForceNavigation">
+ <summary>
+ 3.7.4. Set this to true when a user action has occurred (e.g. a
+   form submit) that MUST result in a page navigation even though the resultant href indicates that
+   this is a intra-page (#) link. Try submitting a comment to MetaFilter: the target is .....php/#comment
+   which looks like an internal link.
+ </summary>
+</member>
+<member name="T:WebbIE4.modGlobals.PageLoadStrategies">
+ <summary>
+ How we try to work out if the page has loaded.
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.PageLoadStrategies.UseJavaScriptOnLoad">
+ <summary>
+ Try to use the JavaScript onload event to detect page loading.
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.PageLoadStrategies.UseDocumentCompleteOnly">
+ <summary>
+ Use DocumentComplete event to detect page loading.
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.gUseJavascriptForPageLoad">
+ <summary>
+ If True, use JavaScript to work out when a page has loaded. If False, use DocumentComplete.
+ This is because I think the former results in security problems and the latter in pages
+ with rubbish on them. 
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.gNoPageActionSoRefresh">
+ <summary>
+ If set, then
+ the user has done something that should result in a
+ change to the page - like clicking a Submit button.
+ Sometimes, however, this doesn't actually trigger a
+ page navigation. If this is the case then you have to
+ do a refresh instead.
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.gClosing">
+ <summary>
+ Set when we are closing.
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.gWebHost">
+ <summary>
+ The main Windows Form hosting the WebBrowser that does all the work.
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.gDisplayingYoutube">
+ <summary>
+ The only time that frmWeb is allowed to get focus is when we are trying
+ to get a Youtube video to start by clicking on it.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebbIE4.modGlobals.gRSSFeedURL">
+ <summary>
+ 'the url of the current web page's RSS feed, or "" if there is none.
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.gExiting">
+ <summary>
+ indicates we're quitting the application and event-based stuff we might have
+   started should terminate. Primarily the WinInet control. TODO What about gClosing?
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.NUMBER_CHARS_ALLOWED_BETWEEN_LINKS">
+ <summary>
+ The number of characters allowed between links if they are to stay on the same line.
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.gShowingWebpage">
+ <summary>
+ Indicates whether the form with the WebBrowser control should be visible (requested by the user)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebbIE4.modGlobals.gFrmWebHasFocusAndItShouldNot">
+ <summary>
+ Indicates that the focus should be put back on frmMain.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebbIE4.modGlobals.linkStruct.description">
+ <summary>
+ link description
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.linkStruct.address">
+ <summary>
+ link address e.g. www.orange.net
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.linkStruct.target">
+ <summary>
+ target of link
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.linkStruct.frameIndex">
+ <summary>
+ index of frame in which link resides
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.linkStruct.element">
+ <summary>
+ the link element
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.targetStruct.idText">
+ <summary>
+ the text following/contained in the target anchor
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.targetStruct.name">
+ <summary>
+ the name Of the anchor
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.selectStruct.name">
+ <summary>
+ Name of menu
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.selectStruct.options">
+ <summary>
+ the options in the select/combo
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.selectStruct.selected">
+ <summary>
+ the number of the option which is selected
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.selectStruct.size">
+ <summary>
+ number of options in menu
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.selectStruct.node">
+ <summary>
+ the node in the DOM
+ </summary>
+</member>
+<member name="T:WebbIE4.modGlobals.frameStruct">
+ <summary>
+ A frame
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.gfindText">
+ <summary>
+ the text searched for in a page by the user
+ </summary>
+</member>
+<member name="F:WebbIE4.modGlobals.gPageHasAnArticle">
+ <summary>
+ Indicates that the HTML5 "ARTICLE" element has been found on the page.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebbIE4.modGlobals.gPageHasMain">
+ <summary>
+ Indicates that the HTML5 "MAIN" element has been found on the page.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:WebbIE4.modGlobals.gDesiredURL">
+ <summary>
+ Set this if you want the webbrowser to navigate somewhere. frmWeb will notice and send it off. 
+ </summary>
+</member>
+<member name="M:WebbIE4.modHTTPGetter.GetFile(System.String@,System.String@)">
+ <summary>
+ gets the file determined by url, saves it to path
+ </summary>
+ <param name="url"></param>
+ <param name="Path"></param>
+ <remarks></remarks>
+</member>
+<member name="F:WebbIE4.modI18N._applicationXML">
+ <summary>
+ Internationalisation for VB.Net projects using XML files
+ </summary>
+ <remarks>
+ HOW TO USE
+ 1 Create ASSEMBLYNAME.Language.Xml (e.g. WebbIE4.Language.Xml) file in same folder as program.
+ 2 Copy in Common.Language.Xml to same folder.
+ 3 Amend as required.
+ 4 When debugging call SetDebug() to output a list of incomplete translations to the desktop.
+ </remarks>
+</member>
+<member name="M:WebbIE4.modI18N.DoControl(System.Windows.Forms.Control,System.String)">
+ <summary>
+ DoControl translates a control AND its children - usually the .Text value,
+ but the .AccessibleName if there is one.
+ </summary>
+ <param name="c"></param>
+ <param name="formName"></param>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.modI18N.GetText(System.String@)">
+ <summary>
+ Returns the internationalised version of the string provided according to the current
+ language (and the availability of the translation.)
+ </summary>
+ <param name="text"></param>
+ <returns></returns>
+ <remarks>
+ If there is no "item" node in AssemblyName.Language.xml that has a "key" node
+ containing the argument text then the argument text is returned. This means that
+ if the code calls GetText("Hello world") and no translation is provided then then
+ function will return "Hello world". On the assumption that calling code is English
+ there is therefore an implicit English default.
+ If the "item" node that matches the argument text has a "leaveBlank" child then
+ the empty string is returned.
+ </remarks>
+</member>
+<member name="M:WebbIE4.modParseA.TrivialParse(mshtml.IHTMLElement)">
+ <summary>
+ Parse the element and return the text contents. This is used instead of .innerText because it adds in 
+ a space between child text elements, which might produce extra spaces but means things like Facebook
+ look okay when parsed - otherwise you get "0REquests" and "3Messages" and suchlike. Alasdair, June 2013.
+ </summary>
+ <param name="element"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.modScriptErrors.RestoreScriptErrors">
+ <summary>
+ Restore script error settings to what they were when DisableScriptErrors was called.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:WebbIE4.modSounds.PlayProgressSound(System.Int32)">
+ <summary>
+ Plays the progress sound. 
+ </summary>
+ <param name="progress">A value from 0 to 9.</param>
+</member>
+<member name="M:WebbIE4.NativeMethods.GetKeyState(System.Int32)">
+ <summary>
+ Used to work out if a key is pressed or not.
+ </summary>
+ <param name="vKey"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:WebbIE4.WebBrowserUtility">
+ <summary>
+ Helper functions  for using the Microsoft WebBrowser control
+ </summary>
+ <remarks>Last update 3 March 2014 for IE11</remarks>
+</member>
+<member name="T:WebbIE4.WebBrowserUtility.InternetExplorerEmulationMode">
+ <summary>
+ Values for FEATURE_BROWSER_EMULATION
+ </summary>
+ <remarks>See http://msdn.microsoft.com/en-us/library/ee330730(v=vs.85).aspx</remarks>
+</member>
+<member name="M:WebbIE4.WebBrowserUtility.SetWebBrowserEmulation(WebbIE4.WebBrowserUtility.InternetExplorerEmulationMode,System.Boolean)">
+ <summary>
+ Writes the HKEY_CURRENT_USER registry key necessary for any WebBrowser components used in this
+ project to emulate a particular version of Internet Explorer. If you don't do this then any
+ WebBrowser objects will run as IE7. 
+ http://msdn.microsoft.com/en-us/library/ee330730(v=VS.85).aspx
+ http://msdn.microsoft.com/en-us/library/ee330730%28VS.85%29.aspx#browser_emulation
+ http://stackoverflow.com/questions/4612255/regarding-ie9-webbrowser-control
+ </summary>
+ <param name="ieMode">The IE mode you want. Note that "best" is "best at the time this code is written". So in January 2014
+ "best" is "IE11". When IE12 comes out, if this code hasn't been updated, then, you'll not get the latest IE.</param>
+ <param name="applyOnFutureVersions">If true then your IE mode will be applied, even if you are using a version of Windows
+ that was not extant when the code was written and the logic has therefore not been checked. You probably want this.</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

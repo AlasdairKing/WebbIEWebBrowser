@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Language file. Edit in a Unicode text editor only. Make a backup copy first. -->
+<language>
+
+	<!--
+		Common buttons - OK, Go, and Cancel.
+	-->
+
+	<item>
+		<key>btnGo.Text</key>
+		<content language="en">&amp;Go</content>
+		<content language="cz">Jdi na</content>
+		<content language="fr">&amp;OK</content>
+		<content language="gr">&amp;Πάμε</content>
+		<content language="nl">&amp;Ga naar</content>
+		<content language="sv">&amp;Gå till</content>
+		<content language="de">&amp;Los</content>
+		<content language="it">&amp;Vai</content>
+		<content language="sk">&amp;Ísť</content>
+		<content language="sr">&amp;Idi</content>
+		<content language="es">&amp;Ir</content>
+		<content language="pt">&amp;Ir</content>
+		<content language="ko">가기 (&amp;G)</content>
+		<content language="no">&amp;Gå</content>
+		<content language="xx">Xxxxx</content>
+	</item>
+	<item>
+		<key>btnCancel.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">Cancel</content>
+		<content language="fr">Annuler</content>
+		<content language="pl">Anuluj</content>
+		<content language="cz">Storno</content>
+		<content language="gr">Ακυρώστε</content>
+		<content language="nl">Annuleren</content>
+		<content language="sv">Avbryt</content>
+		<content language="de">Abbrechen</content>
+		<content language="it">Annulla</content>
+		<content language="sk">Zrušiť</content>
+		<content language="es">Cancelar</content>
+		<content language="sr">Otkaži</content>
+		<content language="pt">Cancela</content>
+		<content language="ko">취소</content>
+		<content language="no">Avbryt</content>
+	</item>
+
+	<!-- 
+		File menu - Open, Save, Edit, Help etc.
+	-->
+		<item>
+			<key>mnuFile.Text</key>
+			<content language="xx">Xxxxx</content>
+			<explanation></explanation>
+			<content language="en">&amp;File</content>
+			<content language="fr">&amp;Fichier</content>
+			<content language="pl">&amp;Plik</content>
+			<content language="cz">&amp;Soubor</content>
+			<content language="fi">&amp;Tiedosto</content>
+			<content language="nl">&amp;Bestand</content>
+			<content language="gr">&amp; Αρχείο</content>
+			<content language="sv">&amp;Arkiv</content>
+			<content language="de">&amp;Datei</content>
+			<content language="it">&amp;File</content>
+			<content language="sk">&amp;Súbor</content>
+			<content language="es">&amp;Archivo</content>
+			<content language="sr">&amp;Datoteka</content>
+			<content language="ar">&amp;ملف</content>
+			<content language="no">&amp;Fil</content></item>
+		<item>
+			<key>mnuOptionsFont.Text</key>
+			<content language="xx">Xxxxx</content>
+			<explanation></explanation>
+			<content language="en">&amp;Font...</content>
+			<content language="fr">&amp;Police...</content>
+			<content language="pl">&amp;Czcionke...</content>
+			<content language="cz">Pís&amp;mo ...</content>
+			<content language="fi">&amp;Fonttia...</content>
+			<content language="nl">&amp;Lettertype...</content>
+			<content language="gr">&amp;Γραμματοσειρά</content>
+			<content language="sv">&amp;Teckensnitt</content>
+			<content language="de">Schri&amp;ftart...</content>
+			<content language="it">&amp;Tipo di carattere...</content>
+			<content language="sk">Pís&amp;mo...</content>
+			<content language="sr">&amp;Fontove...</content>
+			<content language="ar">تغيير الخط</content>
+			<content language="es">&amp;Fuente...</content>
+			<content language="pt">&amp;Fonte...</content>
+			<content language="ko">폰트 변환</content>
+			<content language="no">&amp;Font...</content>
+		</item>
+
+	<item>
+		<key>mnuFileOpen.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;Open</content>
+		<content language="fr">&amp;Ouvrir</content>
+		<content language="pl">&amp;Otwórz</content>
+		<content language="cz">Ot&amp;evřít</content>
+		<content language="fi">&amp;Avaa</content>
+		<content language="nl">&amp;Openen</content>
+		<content language="gr">&amp;Άνοιξε</content>
+		<content language="sv">&amp;Öppna</content>
+		<content language="de">&amp;Öffnen</content>
+		<content language="it">&amp;Apri</content>
+		<content language="sk">&amp;Otvoriť</content>
+		<content language="sr">&amp;Otvori</content>
+		<content language="ar">&amp;فتح</content>
+		<content language="es">&amp;Abrir</content>
+		<content language="pt">&amp;Abrir</content>
+		<content language="ko">열기 (&amp;O)</content>
+		<content language="no">&amp;Åpne</content>
+	</item>
+	<item>
+		<key>mnuFileSave.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;Save</content>
+		<content language="fr">&amp;Enregistrer</content>
+		<content language="pl">Zapi&amp;sz</content>
+		<content language="cz">&amp;Uložit</content>
+		<content language="fi">&amp;Tallenna</content>
+		<content language="nl">Op&amp;slaan</content>
+		<content language="gr">&amp;Σώσε</content>
+		<content language="sv">&amp;Spara</content>
+		<content language="de">&amp;Speichern</content>
+		<content language="it">&amp;Salva</content>
+		<content language="sk">&amp;Uložiť</content>
+		<content language="es">&amp;Guardar</content>
+		<content language="sr">&amp;Sačuvaj</content>
+		<content language="ar">&amp;حفظ</content>
+		<content language="no">&amp;Lagre</content>
+	</item>
+	<item>
+		<key>mnuFilePrint.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;Print...</content>
+		<content language="fr">&amp;Imprimer...</content>
+		<content language="pl">&amp;Drukuj</content>
+		<content language="cz">&amp;Tisk</content>
+		<content language="fi">T&amp;ulosta</content>
+		<content language="nl">&amp;Print</content>
+		<content language="gr">&amp;Εκτύπωσε…</content>
+		<content language="sv">&amp;Skriv ut...</content>
+		<content language="de">&amp;Drucken</content>
+		<content language="it">Stam&amp;pa…</content>
+		<content language="sk">&amp;Tlač</content>
+		<content language="sr">&amp;Štampaj</content>
+		<content language="ar">&amp;طباعة</content>
+		<content language="es">&amp;Imprimir…</content>
+		<content language="pt">Im&amp;primir</content>
+		<content language="ko">인쇄 (&amp;P)</content>
+		<content language="no">&amp;Skriv ut</content>
+	</item>
+	<item>
+		<key>mnuFileExit.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">E&amp;xit</content>
+		<content language="fr">&amp;Quitter</content>
+		<content language="pl">&amp;Zamknij</content>
+		<content language="cz">Kone&amp;c</content>
+		<content language="fi">&amp;Sulje</content>
+		<content language="nl">&amp;Afsluiten</content>
+		<content language="gr">E&amp;xit</content>
+		<content language="sv">A&amp;vsluta</content>
+		<content language="de">&amp;Beenden</content>
+		<content language="it">&amp;Esci</content>
+		<content language="sk">&amp;Skončiť</content>
+		<content language="es">&amp;Salir</content>
+		<content language="sr">E&amp;xit</content>
+		<content language="ar">&amp;خروج</content>
+		<content language="pt">Sai&amp;r</content>
+		<content language="ko">나감 (&amp;X)</content>
+		<content language="no">&amp;Avslutt</content>
+	</item>
+	<item>
+		<key>mnuEdit.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;Edit</content>
+		<content language="fr">&amp;Edition</content>
+		<content language="pl">&amp;Edycja</content>
+		<content language="cz">Úpra&amp;vy</content>
+		<content language="fi">&amp;Muokkaa</content>
+		<content language="nl">Be&amp;werken</content>
+		<content language="gr">&amp;Τύπωσε</content>
+		<content language="sv">&amp;Redigera</content>
+		<content language="de">&amp;Bearbeiten</content>
+		<content language="it">&amp;Modifica</content>
+		<content language="sk">Úpr&amp;avy</content>
+		<content language="sr">&amp;Izmeni</content>
+		<content language="ar">&amp;تحرير</content>
+		<content language="es">&amp;Editar</content>
+		<content language="pt">&amp;Editar</content>
+		<content language="ko">편집 (&amp;E)</content>
+		<content language="no">&amp;Rediger</content>
+	</item>
+	<item>
+		<key>mnuEditCut.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">Cu&amp;t</content>
+		<content language="fr">Cou&amp;per</content>
+		<content language="pl">Wy&amp;tnij</content>
+		<content language="cz">Vyjmo&amp;ut</content>
+		<content language="gr">Cu&amp;t</content>
+		<content language="nl">k&amp;nippen</content>
+		<content language="sv">Klipp u&amp;t</content>
+		<content language="de">&amp;Ausschneiden</content>
+		<content language="it">&amp;Taglia</content>
+		<content language="sk">&amp;Vystrihnúť</content>
+		<content language="sr">Sec&amp;i</content>
+		<content language="ar">قص</content>
+		<content language="es">Cortar</content>
+		<content language="pt">Recor&amp;tar</content>
+		<content language="ko">잘라내기 (&amp;T)</content>
+		<content language="no">&amp;Klipp ut</content>
+	</item>
+	<item>
+		<key>mnuEditCopy.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;Copy</content>
+		<content language="fr">&amp;Copier</content>
+		<content language="pl">&amp;Kopiuj</content>
+		<content language="cz">&amp;Kopírovat</content>
+		<content language="fi">&amp;Kopioi</content>
+		<content language="nl">&amp;Kopiëren</content>
+		<content language="gr">&amp;Αντιγραφή</content>
+		<content language="sv">K&amp;opiera</content>
+		<content language="de">&amp;Kopieren</content>
+		<content language="it">&amp;Copia</content>
+		<content language="sk">&amp;Kopírovať</content>
+		<content language="sr">&amp;Kopiraj</content>
+		<content language="ar">نسخ</content>
+		<content language="es">Copiar</content>
+		<content language="pt">&amp;Copiar</content>
+		<content language="ko">복사 (&amp;C)</content>
+		<content language="no">K&amp;opier</content>
+	</item>
+	<item>
+		<key>mnuEditPaste.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;Paste</content>
+		<content language="fr">C&amp;oller</content>
+		<content language="pl">Wk&amp;lej</content>
+		<content language="cz">V&amp;ložit</content>
+		<content language="fi">L&amp;iitä</content>
+		<content language="nl">&amp;Plakken</content>
+		<content language="gr">&amp;Επικόλληση</content>
+		<content language="sv">&amp;Klistra in</content>
+		<content language="de">&amp;Einfügen</content>
+		<content language="it">&amp;Incolla</content>
+		<content language="sk">&amp;Prilepiť</content>
+		<content language="sr">&amp;Zalepi</content>
+		<content language="ar">لصق</content>
+		<content language="es">Pegar</content>
+		<content language="pt">Co&amp;lar</content>
+		<content language="ko">붙여넣기 (&amp;P)</content>
+		<content language="no">&amp;Lim inn</content>
+	</item>
+	<item>
+		<key>mnuEditSelectall.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">Select &amp;All</content>
+		<content language="fr">Sélectionner &amp;Tout</content>
+		<content language="pl">Z&amp;aznacz wszystko </content>
+		<content language="cz">V&amp;ybrat vše</content>
+		<content language="fi">&amp;Valitse kaikki</content>
+		<content language="nl">&amp;Alles Selecteren</content>
+		<content language="gr">Select &amp;All</content>
+		<content language="sv">Markera &amp;alla</content>
+		<content language="de">&amp;Alles auswählen</content>
+		<content language="it">&amp;Seleziona tutto</content>
+		<content language="sk">V&amp;ybrať všetko</content>
+		<content language="sr">Izaberi&amp;Sve</content>
+		<content language="ar">تحديد الكل</content>
+		<content language="es">Seleccionar &amp;todo</content>
+		<content language="pt">Selecion&amp;ar Tudo</content>
+		<content language="ko">전체 선택 (&amp;A)</content>
+		<content language="no">&amp;Velg alt</content>
+	</item>
+	<item>
+		<key>mnuEditFindtext.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;Find...</content>
+		<content language="fr">&amp;Rechercher...</content>
+		<content language="pl">&amp;Znajdc...</content>
+		<content language="cz">&amp;Najít...</content>
+		<content language="fi">&amp;Etsi...</content>
+		<content language="nl">&amp;Zoeken...</content>
+		<content language="gr">&amp; Βρείτε...</content>
+		<content language="sv">&amp;Sök...</content>
+		<content language="de">&amp;Suche...</content>
+		<content language="it">&amp;Trova...</content>
+		<content language="sk">&amp;Nájsť...</content>
+		<content language="sr">&amp;Nađi...</content>
+		<content language="ar">بحث في هذه الصفحة</content>
+		<content language="es">&amp;Buscar...</content>
+		<content language="pt">&amp;Procurar...</content>
+		<content language="ko">현재 페이지에서 찾기 (&amp;F)</content>
+		<content language="no">&amp;Søk</content>
+	</item>
+	<item>
+		<key>mnuEditFindnext.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">Find &amp;Next</content>
+		<content language="fr">Rechercher &amp;Suivant</content>
+		<content language="pl">Znajdc &amp;nastepne</content>
+		<content language="cz">Na&amp;jít další</content>
+		<content language="fi">Etsi seu&amp;raava</content>
+		<content language="nl">Zoek &amp;Volgende</content>
+		<content language="gr">Βρείτε &amp;Επόμενο</content>
+		<content language="sv">Sök &amp;nästa</content>
+		<content language="de">Suche &amp;Nächsten</content>
+		<content language="it">T&amp;rova successivo</content>
+		<content language="sk">Ná&amp;jsť ďalšie</content>
+		<content language="sr">Nađi&amp;Sledeće</content>
+		<content language="ar">بحث عن التالي</content>
+		<content language="es">Buscar &amp;siguiente</content>
+		<content language="pt">E&amp;ncontrar Proximo</content>
+		<content language="ko">다시 찾기 (&amp;N)</content>
+		<content language="no">&amp;Finn neste</content>
+	</item>	
+	<item>
+		<key>mnuView.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;View</content>
+		<content language="fr">Affi&amp;chage</content>
+		<content language="pl">Pod&amp;glad</content>
+		<content language="cz">&amp;Zobrazit</content>
+		<content language="fi">&amp;Näytä</content>
+		<content language="nl">Beel&amp;d</content>
+		<content language="gr">&amp;Άποψη</content>
+		<content language="sv">&amp;Visa</content>
+		<content language="de">An&amp;zeigen</content>
+		<content language="it">&amp;Visualizza</content>
+		<content language="sk">&amp;Zobraziť</content>
+		<content language="sr">&amp;Pregled</content>
+		<content language="ar">عرض</content>
+		<content language="es">&amp;Ver</content>
+		<content language="pt">&amp;Visualisar</content>
+		<content language="ko">보기 (&amp;V)</content>
+		<content language="no">V&amp;isning</content>
+	</item>
+	<item>
+		<key>mnuOptions.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;Options</content>
+		<content language="fr">&amp;Options</content>
+		<content language="pl">&amp;Opcje</content>
+		<content language="cz">&amp;Možnosti</content>
+		<content language="fi">&amp;Asetukset</content>
+		<content language="nl">E&amp;xtra</content>
+		<content language="gr">&amp;Επιλογές</content>
+		<content language="sv">&amp;Alternativ</content>
+		<content language="de">&amp;Optionen</content>
+		<content language="it">&amp;Opzioni</content>
+		<content language="sk">&amp;Možnosti</content>
+		<content language="sr">&amp;Opcije</content>
+		<content language="ar">الخيارات</content>
+		<content language="es">&amp;Opciones</content>
+		<content language="pt">&amp;Opcoes</content>
+		<content language="ko">옵션 (&amp;O)</content>
+		<content language="no">&amp;Alternativer</content>
+	</item>
+	<item>
+		<key>mnuOptionsOptions.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;Options</content>
+		<content language="fr">&amp;Options</content>
+		<content language="pl">&amp;Opcje</content>
+		<content language="cz">&amp;Možnosti</content>
+		<content language="fi">&amp;Asetukset</content>
+		<content language="nl">E&amp;xtra</content>
+		<content language="gr">&amp;Επιλογές</content>
+		<content language="sv">&amp;Alternativ</content>
+		<content language="de">&amp;Optionen</content>
+		<content language="it">&amp;Opzioni</content>
+		<content language="sk">&amp;Možnosti</content>
+		<content language="sr">&amp;Opcije</content>
+		<content language="ar">الخيارات</content>
+		<content language="es">&amp;Opciones</content>
+		<content language="pt">&amp;Opcoes</content>
+		<content language="ko">옵션 (&amp;O)</content>
+		<content language="no">&amp;Alternativer</content>
+	</item>
+	<item>
+		<key>mnuHelp.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;Help</content>
+		<content language="fr">&amp;Aide</content>
+		<content language="pl">Po&amp;moc</content>
+		<content language="cz">Nápo&amp;věda</content>
+		<content language="fi">O&amp;hje</content>
+		<content language="nl">&amp;Help</content>
+		<content language="gr">&amp;Βοήθεια</content>
+		<content language="sv">&amp;Hjälp</content>
+		<content language="de">&amp;Hilfe</content>
+		<content language="it">&amp;Aiuto</content>
+		<content language="sk">&amp;Pomocník</content>
+		<content language="es">Ay&amp;uda</content>
+		<content language="sr">&amp;Pomoć</content>
+		<content language="ar">المساعدة</content>
+		<content language="pt">A&amp;juda</content>
+		<content language="ko">도움말 (&amp;H)</content>
+		<content language="no">&amp;Hjelp</content>
+	</item>
+	<item>
+		<key>mnuHelpManual.Text</key>
+		<content language="en">&amp;Manual</content>
+		<content language="xx">Xxxxx</content>
+		<content language="de">&amp;Manuell</content>
+		<content language="fr">&amp;Manuel</content>
+		<content language="it">&amp;Manuale</content>
+	</item>
+	<item>
+		<key>mnuHelpAbout.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;About...</content>
+		<content language="fr">A propos...</content>
+		<content language="pl">&amp;O programie...</content>
+		<content language="cz">O progr&amp;amu...</content>
+		<content language="fi">&amp;Tietoja stä</content>
+		<content language="nl">&amp;Info</content>
+		<content language="gr">&amp;Σχετικά...</content>
+		<content language="sv">&amp;Om...</content>
+		<content language="de">&amp;Über...</content>
+		<content language="it">&amp;Informazioni...</content>
+		<content language="sk">&amp;O programe...</content>
+		<content language="sr">&amp;O...</content>
+		<content language="es">&amp;Acerca...</content>
+		<content language="pt">&amp;Sobre...</content>
+		<content language="no">&amp;Om...</content>
+	</item>
+	<item>
+		<key>mnuFileClose.Text</key>
+		<content language="xx">Xxxxx</content>
+		<explanation></explanation>
+		<content language="en">&amp;Close</content>
+		<content language="fr">Fer&amp;mer</content>
+		<content language="pl">&amp;Zamknij</content>
+		<content language="cz">Kone&amp;c</content>
+		<content language="gr">&amp;Κλείσιμο</content>
+		<content language="nl">&amp;Afsluiten</content>
+		<content language="sv">&amp;Stäng</content>
+		<content language="de">&amp;Schliessen</content>
+		<content language="it">&amp;Chiudi</content>
+		<content language="sk">&amp;Koniec</content>
+		<content language="sr">&amp;Zatvori</content>
+		<content language="ar">إغلاق</content>
+		<content language="es">&amp;Cerrar</content>
+		<content language="pt">Fe&amp;char</content>
+		<content language="ko">닫기 (&amp;C)</content>
+		<content language="no">L&amp;ukk</content>
+	</item>
+	
+	<!-- 
+		Useful strings
+	-->
+	
+	<item>
+		<key>Text not found</key>
+		<content language="en">Text not found</content>
+		<content language="fr">Le texte n'a pas été trouvé</content>
+		<content language="cz">Text nelze najít</content>
+		<content language="pl">Tekst nie zostal znaleziony</content>
+		<content language="xx">Xxxxx</content>
+		<explanation/>
+		<content language="fi">Tekstiä ei löydy</content>
+		<content language="gr">Κείμενο δεν βρέθηκε</content>
+		<content language="nl">Tekst niet gevonden</content>
+		<content language="sv">Texten finns inte</content>
+		<content language="de">Text nicht gefunden</content>
+		<content language="it">Testo non trovato</content>
+		<content language="sk">Text nenájdený</content>
+		<content language="sr">Tekst nije nađen</content>
+		<content language="ar">النص غير موجود</content>
+		<content language="es">No se encontró el texto</content>
+		<content language="pt">Texto nao encontrado</content>
+		<content language="ko">해당 텍스트 없음</content>
+		<content language="no">Tekst ikke funnet</content>
+	</item>
+		
+			
+</language>

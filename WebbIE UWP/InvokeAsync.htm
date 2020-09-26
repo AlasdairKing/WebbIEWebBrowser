@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://www.webbie.org.uk -->
+<html lang="en-gb">
+<head>
+	<meta charset="utf-8">	
+	<title>EdgIE (WebbIE in JavaScript)</title>
+		
+	<style type="text/css">
+		body {
+				font-family:segoe ui,arial,sans-serif			
+		}
+
+	</style>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+
+	
+	<script src="edgie.js" type="text/javascript"></script>
+	<script>
+		"use strict";
+	function example(arg) {
+		//alert(document.body.childNodes.length);
+		var s = "";
+		s = webbie(document.body);
+		alert(s);
+
+	}
+	function addfunc() {
+		window.Test = function () {
+			alert(Webbie(document.body));
+		};
+	}
+	function callfunc() {
+		Test();
+	}
+	</script>
+	
+
+</head>
+<body>
+<input type="button" value="click me!" onclick="example('1')">
+<br>
+<input type="button" value="click me 2!" onclick="addfunc()">
+<br>
+<input type="button" value="click me 2!" onclick="callfunc()">
+<br>
+<img src="image.png" alt="Test image">
+<p>Testy McTest</p>
+<p><a href="https://www.google.com">Google</a></p>
+<p>And <em>why</em> not?</p>
+</body>
+</html>

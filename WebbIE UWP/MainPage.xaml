@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="WebbIE_10.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WebbIE_10"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBox ScrollViewer.VerticalScrollBarVisibility="Auto" x:Name="txtAddress" Grid.Row="0" Grid.Column="0" KeyDown="txtAddress_KeyDown" GotFocus="txtAddress_GotFocus" AutomationProperties.Name="Address" AutomationProperties.AcceleratorKey="d" ></TextBox>
+        <Button x:Name="btnGo" Grid.Row="0" Grid.Column="1">Go</Button>
+        <WebView Visibility="Collapsed" x:Name="webMain" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0" NavigationCompleted="webMain_NavigationCompleted"></WebView>
+        <TextBox x:Name="txtMain" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0" TextWrapping="Wrap"></TextBox>
+    </Grid>
+</Page>

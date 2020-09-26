@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+  <Bundle
+      Version="4.3.2"
+      UpgradeCode="A61339A0-0548-4EE4-813A-BEEF008713CC"
+      Name="WebbIE 4"
+      Manufacturer="Alasdair King"
+      SplashScreenSourceFile="SplashScreen.bmp"
+      IconSourceFile="webbie4.ico"
+		>
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense">
+      <bal:WixStandardBootstrapperApplication
+        LicenseFile="License.rtf"
+        LogoFile="WebbIE4.png"
+  SuppressOptionsUI="yes"
+            />
+    </BootstrapperApplicationRef>
+    <!-- <WixVariable Id="WixStdbaLicenseRtf" Value="License.rtf" /> -->
+    <!-- <WixVariable Id="LicenseUrl" Value="" />
+        <WixVariable Id="WixStdbaLogo" Value="WebbIE4.png" /> -->
+    <Chain>
+      <!-- .Net Framework. See http://wix.sourceforge.net/manual-wix3/install_dotnet.htm -->
+      <PackageGroupRef Id="NetFx40Redist"/>
+      <!-- Then WebbIE -->
+      <MsiPackage
+				Name="WebbIE 4 Web Browser"
+				Compressed="yes"
+				Visible="yes"
+				SourceFile="..\WebbIE4-MSI\bin\Release\WebbIE4.msi"
+			>
+        <MsiProperty Name="SUPPRESS_START" Value="true" />
+      </MsiPackage>
+      <!-- DownloadUrl="http://www.webbie.org.uk/webbrowser/WebbIE4.msi" -->
+      <!-- <MsiPackage 
+				Name="PDF Reader 3"
+				Compressed="yes"
+				Visible="yes"
+				SourceFile="C:\SkyDrive\personal\aljo\webbie\pdfreader\pdfreader3.msi"
+			>
+				<MsiProperty Name="SUPPRESS_START" Value="true" />
+			</MsiPackage> -->
+      <!-- DownloadUrl="http://www.webbie.org.uk/pdfreader/PDFReader3.msi" -->
+      <!-- <MsiPackage 
+				Name="WebbIE Accessible Program Pack"
+				Compressed="yes"
+				Visible="yes"
+				SourceFile="C:\SkyDrive\personal\aljo\webbie\download\WebbIE-Accessible-Program-Pack.msi"
+			>
+				<MsiProperty Name="SUPPRESS_START" Value="true" />
+			</MsiPackage> -->
+      <!-- DownloadUrl="http://www.webbie.org.uk/download/WebbIE-Accessible-Program-Pack.msi" -->
+      <!-- <MsiPackage
+				Name="BBC iPlayer Radio 8"
+				Compressed="yes"
+				Visible="yes"
+				SourceFile="C:\SkyDrive\personal\aljo\webbie\BBCIPlayerRadio\BBCIPlayerRadio.msi"
+			>
+				<MsiProperty Name="SUPPRESS_START" Value="true" />
+			</MsiPackage> -->
+      <!-- DownloadUrl="http://www.webbie.org.uk/bbciplayerradio/BBCIPlayerRadio.msi" -->
+      <!-- <MsiPackage
+				Name="BBC Live Radio 2"
+				Compressed="yes"
+				Visible="yes"
+				SourceFile="C:\SkyDrive\personal\aljo\webbie\BBCLiveRadio\BBCLiveRadio2.msi"
+			>
+				<MsiProperty Name="SUPPRESS_START" Value="true" />
+			</MsiPackage> -->
+      <!-- DownloadUrl="http://www.webbie.org.uk/bbcliveradio/BBCLiveRadio2.msi" -->
+      <!-- <MsiPackage
+				Name="RSS News Reader 3"
+				Compressed="yes"
+				Visible="yes"
+				SourceFile="C:\SkyDrive\personal\aljo\webbie\rssnewsreader\RSSNewsReader3.msi"
+			>
+				<MsiProperty Name="SUPPRESS_START" Value="true" />
+			</MsiPackage> -->
+      <!-- DownloadUrl="http://www.webbie.org.uk/rssnewsreader/RSSNewsReader3.msi" -->
+      <!-- <MsiPackage
+				Name="BBC iPlayer TV 7"
+				Compressed="yes"
+				Visible="yes"
+				SourceFile="C:\SkyDrive\personal\aljo\webbie\bbciplayertv\BBCiPlayerTV7.msi"
+			>
+				<MsiProperty Name="SUPPRESS_START" Value="true" />
+			</MsiPackage> -->
+      <!-- DownloadUrl="http://www.webbie.org.uk/bbciplayertv/BBCiPlayerTV7.msi" -->
+    </Chain>
+  </Bundle>
+</Wix>

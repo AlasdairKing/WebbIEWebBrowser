@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Windows 10 App Manifest
+	
+	IMAGES (logos)	
+	Tiles for the Start screen:
+		small 70px
+		small 71px (!?)
+		logo 90px (according to https://msdn.microsoft.com/en-us/library/windows/apps/dn423242.aspx)
+		medium 150px
+		wide 310x150
+		large 310
+	Search results and Apps list:
+		tiny 30px (Where is this specified?)
+	Splash screen:
+		620x300px (see https://msdn.microsoft.com/en-us/library/windows/apps/dn934810.aspx)
+-->
+    <Package
+       xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+       xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+       xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities">
+	   <!-- see https://msdn.microsoft.com/en-us/library/windows/apps/br211441.aspx -->
+      <Identity Name="WebbIE.WebbIEWebBrowser"
+        ProcessorArchitecture="x86"
+        Publisher="CN=357FA256-B1D2-43C0-BD46-B48C34DDB5CB" 
+        Version="4.5.4.0" />
+	  <!-- https://msdn.microsoft.com/en-us/library/windows/apps/br211457.aspx -->
+      <Properties>
+        <Description>Displays web pages as plain text so you can use them easily with a screen reader</Description>
+        <DisplayName>WebbIE</DisplayName>
+        <PublisherDisplayName>Alasdair King</PublisherDisplayName>
+		<!-- https://msdn.microsoft.com/en-us/library/windows/apps/dn934758.aspx -->
+		<!-- https://msdn.microsoft.com/en-us/library/windows/apps/dn423242.aspx -->
+		<!-- SCALES
+			100	50px
+			140	70px
+			180	90px
+			200	100px (This isn't on the MSDN page, but it's what InsiderHub the Windows App uses. 
+			
+			Except I tried this (creating the .scale-200.png versions) and then NOTHING showed up! So no good.
+		-->
+        <Logo>Assets\StoreLogo_90.png</Logo>
+      </Properties>
+      <Resources>
+        <Resource Language="en-GB" />
+        <Resource Language="en-US" />
+        <Resource Language="fr-FR" />
+        <Resource Language="sv-SE" />
+        <Resource Language="pl-PL" />
+        <Resource Language="ar-SA" />
+        <Resource Language="es-ES" />
+        <Resource Language="pt-PT" />
+		<Resource Language="ko-KR" />
+		<Resource Language="nb-NO" />
+	  </Resources>
+      <Dependencies>
+        <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14316.0" MaxVersionTested="10.0.14316.0" /> 
+      </Dependencies>
+      <Capabilities>
+        <rescap:Capability Name="runFullTrust"/>
+      </Capabilities>
+	  <!-- https://msdn.microsoft.com/en-us/library/windows/apps/br211417.aspx -->
+      <Applications>
+	  <!-- https://msdn.microsoft.com/en-us/library/windows/apps/br211415.aspx -->
+        <Application Id="WebbIE" Executable="WebbIE4.exe" EntryPoint="Windows.FullTrustApplication">
+		  <!-- https://msdn.microsoft.com/en-us/library/windows/apps/dn934817.aspx -->
+		  <!-- BackgroundColor="#464646" - no, this looks rubbish, use the accent colour -->
+          <uap:VisualElements
+		   AppListEntry="default"
+		   BackgroundColor="transparent"
+           Description="Displays web pages as plain text for screenreader users"
+           DisplayName="WebbIE"
+           Square150x150Logo="Assets\Store_150.png" 
+           Square44x44Logo="Assets\Store_44.png" 
+		   >
+			<!-- https://msdn.microsoft.com/en-us/library/windows/apps/br211427.aspx -->
+			<uap:DefaultTile
+				ShortName="WebbIE"
+				Square310x310Logo="Assets\Tile_310.png"
+				Square71x71Logo="Assets\Tile_71.png"
+				Wide310x150Logo="Assets\Tile_310_150.png"
+			>	
+				<!-- https://msdn.microsoft.com/en-us/library/windows/apps/dn934808.aspx?f=255&MSPPError=-2147217396 -->
+				<uap:ShowNameOnTiles>
+				    <uap:ShowOn Tile="square150x150Logo"/> 
+					<uap:ShowOn Tile="wide310x150Logo"/> 
+					<uap:ShowOn Tile="square310x310Logo"/> 
+				</uap:ShowNameOnTiles>	
+			</uap:DefaultTile>
+			<uap:SplashScreen 
+				Image="Assets\Splash_620_300.png" />
+		   </uap:VisualElements>
+        </Application>
+      </Applications>
+    </Package>

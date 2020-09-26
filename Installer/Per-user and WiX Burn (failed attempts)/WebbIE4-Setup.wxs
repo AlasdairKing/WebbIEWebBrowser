@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+  <Bundle
+      Version="4.3.3"
+      UpgradeCode="FB70E178-67B2-4A66-8247-BB18EBC448C7"
+      Name="WebbIE 4 Web Browser"
+      Manufacturer="Alasdair King"
+      SplashScreenSourceFile="SplashScreen.bmp"
+      IconSourceFile="webbie4.ico"
+		>
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLicense">
+      <bal:WixStandardBootstrapperApplication
+        LicenseUrl=""
+        LogoFile="WebbIE4.png"
+		SuppressOptionsUI="yes"
+            />
+    </BootstrapperApplicationRef>
+    <Chain>
+      <!-- .Net Framework. See http://wix.sourceforge.net/manual-wix3/install_dotnet.htm -->
+      <PackageGroupRef Id="NetFx40Redist"/>
+      <!-- Then WebbIE -->
+      <MsiPackage
+				Name="WebbIE 4 Web Browser"
+				Compressed="yes"
+				Visible="yes"
+				SourceFile="WebbIE4.msi"
+			>
+      </MsiPackage>
+</Chain>
+  </Bundle>
+</Wix>

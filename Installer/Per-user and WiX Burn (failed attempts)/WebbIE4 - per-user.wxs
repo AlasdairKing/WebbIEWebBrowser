@@ -1,0 +1,160 @@
+﻿
+<?xml version="1.0" encoding="utf-8"?>
+<!--	
+	Installer for WebbIE 4
+-->
+<?define ProductName="WebbIE 4" ?>
+<?define Manufacturer="Alasdair King" ?>
+<?define UpgradeCode="{FB70E178-67B2-4A66-8247-BB18EBC448C7}" ?>
+<?define ProductVersion="4.3.0" ?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Product Id="*" Language="1033" Manufacturer="$(var.Manufacturer)" Name="$(var.ProductName)" UpgradeCode="$(var.UpgradeCode)" Version="$(var.ProductVersion)">
+        <Package Id="*" Compressed="yes" InstallerVersion="301" InstallScope="perUser" InstallPrivileges="limited" />
+        <Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="LocalAppDataFolder">
+				<Directory Id="INSTALLDIR" Name="$(var.ProductName)">
+					<Component Feature="ProductFeature" Id="Common.Language.xml" Guid="{0ABEF6C1-A7A9-4C89-AD59-C00D4A67F9BF}">
+						<File Id="Common.Language.xml" Source="SourceDir\Common.Language.xml" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\$(var.ProductName)\Common.Language.xml" Type="string" Value="Installed" KeyPath="yes" />
+					</Component>
+					<Component Feature="ProductFeature" Id="WebbIE4.exe" Guid="{8DCBFF78-616E-4269-B6E2-9411F8CB8F7B}">
+						<CreateFolder />
+						<File Id="WebbIE4.exe" Source="SourceDir\WebbIE4.exe">
+							<Shortcut Id='EXEName.exe' Name='$(var.ProductName)' Directory='ProgramMenuFolder' 
+							Icon='EXEName.exe' WorkingDirectory="INSTALLDIR">
+								<Icon Id='EXEName.exe' SourceFile='SourceDir\WebbIE4.ico' />
+							</Shortcut>
+							<Shortcut Id='DesktopShortcut' Name='$(var.ProductName)' Directory='DesktopFolder' Icon='EXEName.exe' />
+						</File>
+						<RemoveFile Id='Cleanup' On='uninstall' Name='*.*'/>
+						<RemoveFolder Id="CleanupFolder" On="uninstall" />
+						
+						<RegistryValue Root="HKCU" Key="SOFTWARE\$(var.ProductName)\WebbIE4.exe" Type="string" Value="Installed" KeyPath="yes" />
+
+						<!-- 
+							REGISTRATION for default file handler etc.
+						
+							There's LOTS of entries, and they vary from Windows XP to Windows 8. 
+							
+							The ProgId for WebbIE is WebbIE.HTM.4
+						-->
+						
+						<!-- Register .htm file types, and that I can open them. http://msdn.microsoft.com/en-us/library/cc144148(v=vs.85).aspx -->
+						<!-- This changes the default: don't do this! <RegistryValue Root="HKCU" Key="SOFTWARE\Classes\.htm\OpenWithProgids" Type="string"
+						Value="WebbIE4.exe" /> -->
+						<!-- But do add myself as an Open With option. -->
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Classes\.htm\OpenWithProgids" Name="WebbIE.HTM.4" Type="string" Value="" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Classes\.html\OpenWithProgids" Name="WebbIE.HTM.4" Type="string" Value="" />
+						
+						<!-- ProgId entry. Only need one because .htm and .html are the same type. See also webbie4htmldoc.ico for DefaultIcon. 
+							 It says HTM because that's what we're registering to handle, so if we added PDF support that would be WebbIE.PDF.4.
+						-->
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Classes\WebbIE.HTM.4" Type="string" Value="WebbIE HTML Document" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Classes\WebbIE.HTM.4\shell\open\command" Type="string" Value='"[#WebbIE4.exe]" "%1"' />
+						<!-- Need to duplicate the htmlfile (HTML handler) class entries because the documentation says so. -->
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Classes\WebbIE.HTM.4" Name="Content Type" Type="string" Value="text/html" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Classes\WebbIE.HTM.4" Name="PerceivedType" Type="string" Value="text" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Classes\WebbIE.HTM.4\CLSID" Type="string" Value="{D664177E-25AE-4B14-ADD0-FFD930C9C210}" />
+
+						<!-- Now the browser-specific entries -->
+ 						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE" Type="string" Value="$(var.ProductName)" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\shell\open\command" Type="string" Value='"[#WebbIE4.exe]" "%1"' />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\DefaultIcon" Type="string" Value="[#WebbIE4.exe],0" />
+						<!-- Default gives the program name. No need to do Localized String: falls back to this value. -->
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\InstallInfo" Name="HideIconsCommand" Type="string" Value='"[#WebbIE4.exe]" -hide' />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\InstallInfo" Name="ReinstallCommand" Type="string" Value='"[#WebbIE4.exe]" -reinstall' />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\InstallInfo" Name="ShowIconsCommand" Type="string" Value='"[#WebbIE4.exe]" -show' />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\InstallInfo" Name="IconsVisible" Type="integer" Value="1" />
+						<!-- Capabilities. See http://msdn.microsoft.com/en-us/library/cc144154(VS.85).aspx -->
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\Capabilities" Type="string" Name="ApplicationDescription" Value="Web browser for screenreader and blind users" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\Capabilities" Type="string" Name="ApplicationName" Value="$(var.ProductName)" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\Capabilities" Type="string" Name="ApplicationIcon" Value="[#WebbIE4.exe],0" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\Capabilities\FileAssociations" Type="string" Name=".htm" Value="WebbIE.HTM.4" /> 
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\Capabilities\FileAssociations" Type="string" Name=".html" Value="WebbIE.HTM.4" /> 
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\Capabilities\StartMenu" Type="string" Name="StartMenuInternet" Value="WEBBIE4.EXE" /> 
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\Capabilities\UrlAssociations" Type="string" Name="http" Value="WebbIE.HTM.4" /> 
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\Capabilities\UrlAssociations" Type="string" Name="https" Value="WebbIE.HTM.4" /> 
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE\Capabilities\MimeAssociations" Type="string" Name="text/html" Value="WebbIE.HTM.4" /> 
+						<RegistryValue Root="HKCU" Key="SOFTWARE\RegisteredApplications" Type="string" Name="$(var.ProductName)" Value="SOFTWARE\Clients\StartMenuInternet\WEBBIE4.EXE" /> 
+
+						<!-- Register app for ShellExecute http://msdn.microsoft.com/en-us/library/ee872121(v=vs.85).aspx -->
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\webbie4.exe" Type="string" Value="[#WebbIE4.exe]" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\webbie.exe" Type="string" Value="[#WebbIE4.exe]" />
+
+						<!-- Give app a nice name. http://msdn.microsoft.com/en-us/library/ee872121(v=vs.85).aspx -->
+						<RegistryValue Root="HKCU" Key="Software\Classes\Applications\WebbIE4.exe" Type="string" Value="$(var.ProductName)" />
+						<!-- Tell Windows that the app can open htm files.  http://msdn.microsoft.com/en-us/library/ee872121(v=vs.85).aspx -->
+						<RegistryValue Root="HKCU" Key="Software\Classes\Applications\WebbIE4.exe\SupportedTypes" Name=".htm" Value="" Type="string" />
+						<RegistryValue Root="HKCU" Key="Software\Classes\Applications\WebbIE4.exe\SupportedTypes" Name=".html" Value="" Type="string" />
+						
+					</Component>
+					<Component Feature="ProductFeature" Id="WebbIE4.exe.config" Guid="{2671CBA4-BE37-4AC5-9AD9-A74BC77A9077}">
+						<File Id="WebbIE4.exe.config" Source="SourceDir\WebbIE4.exe.config" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\$(var.ProductName)\WebbIE4.exe.config" Type="string" Value="Installed" KeyPath="yes" />
+					</Component>
+					<Component Feature="ProductFeature" Id="webbie4htmldoc.ico" Guid="{39A31896-4B07-43E9-B081-A080CBA82EB1}">
+						<File Id="webbie4htmldoc.ico" Source="SourceDir\webbie4htmldoc.ico" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\$(var.ProductName)\webbie4htmldoc.ico" Type="string" Value="Installed" KeyPath="yes" />
+						<!-- ProgId -->
+						<RegistryValue Root="HKCU" Key="SOFTWARE\Classes\WebbIE.HTM.4\DefaultIcon" Type="string" Value="[#webbie4htmldoc.ico]" />
+					</Component>
+					<Component Feature="ProductFeature" Id="WebbIE4.Help_en.rtf" Guid="{A720ADC1-1D17-46CE-83F3-F75CA6130C47}">
+						<File Id="WebbIE4.Help_en.rtf" Source="SourceDir\WebbIE4.Help-en.rtf" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\$(var.ProductName)\WebbIE4.Help_en.rtf" Type="string" Value="Installed" KeyPath="yes" />
+					</Component>
+					<Component Feature="ProductFeature" Id="WebbIE4.ico" Guid="{351377CB-7EF4-453F-8158-DEE24F827CB3}">
+						<File Id="WebbIE4.ico" Source="SourceDir\WebbIE4.ico" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\$(var.ProductName)\WebbIE4.ico" Type="string" Value="Installed" KeyPath="yes" />
+					</Component>
+					<Component Feature="ProductFeature" Id="WebbIE4.Language.xml" Guid="{61E2AAF1-3A5D-4E93-9CAB-6D1826BEEBE9}">
+						<File Id="WebbIE4.Language.xml" Source="SourceDir\WebbIE4.Language.xml" />
+						<RegistryValue Root="HKCU" Key="SOFTWARE\$(var.ProductName)\WebbIE4.Language.xml" Type="string" Value="Installed" KeyPath="yes" />
+					</Component>
+				</Directory>
+				<Directory Id='ProgramMenuFolder'>
+					<Component Id="ProgramGroup" Guid="*" Feature="ProductFeature"> 
+						<RegistryValue Root="HKCU" Key="SOFTWARE\$(var.ProductName)" Type="string" Value="Installed" />
+					</Component>
+				</Directory>
+			</Directory>
+			<Directory Id='WindowsFolder' />
+			<Directory Id='ProfilesFolder' />
+			<Directory Id="CommonAppDataFolder" />
+			<Directory Id='StartMenuFolder' />
+			<Directory Id='DesktopFolder' />			
+        </Directory>
+        <Feature Id="ProductFeature" Level="1" Title="$(var.ProductName)" ConfigurableDirectory="INSTALLDIR" />
+        <Media Id="1" Cabinet="product.cab" EmbedCab="yes" CompressionLevel="none" />
+		<Property Id='WIXUI_INSTALLDIR' Value='INSTALLDIR' />
+		<!-- <UIRef Id='WixUI_Minimal' />
+		<WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+		<WixVariable Id="WixUIBannerBmp" Value="bannrbmp.bmp" />
+		<WixVariable Id="WixUIDialogBmp" Value="dlgbmp.bmp" /> -->
+		<CustomAction Id="SAVETARGETDIR" Property="ARPINSTALLLOCATION" Value="[INSTALLDIR]" /> 
+		<InstallExecuteSequence>
+			<Custom Action="SAVETARGETDIR" After="InstallValidate" />
+		</InstallExecuteSequence>
+		<Property Id="MSIFASTINSTALL" Value="1" />
+		<Property Id='ARPPRODUCTICON' Value='EXEName.exe' />
+		<!-- Upgrade self and prevent downgrade -->
+		<InstallExecuteSequence>
+			<!-- Uninstall old version BEFORE installing any of our own files. Less efficient but safer. -->
+			<RemoveExistingProducts After="InstallValidate" />
+			<!-- Run application -->
+			<Custom Action="LaunchApplication" After="InstallFinalize">NOT Installed AND SUPPRESS_START&lt;&gt;"1"</Custom>
+		</InstallExecuteSequence>
+		<Upgrade Id="$(var.UpgradeCode)">
+			<UpgradeVersion Minimum="0.0.1" Maximum="$(var.ProductVersion)" Property="UPGRADE_SELF" IncludeMinimum="yes" IncludeMaximum="no" IgnoreRemoveFailure="yes" MigrateFeatures="yes" ExcludeLanguages="yes" />
+			<UpgradeVersion Minimum="$(var.ProductVersion)" OnlyDetect="yes" Property="NEWERVERSIONDETECTED" />		
+		</Upgrade>		
+		<Condition Message="A newer version of [ProductName] is already installed.  You must uninstall that package before this one can be installed.">
+			NOT NEWERVERSIONDETECTED
+		</Condition> 	
+		<Property Id="ALLUSERS" Secure="yes"/>
+		<Condition Message="Setting the ALLUSERS property is not allowed because [ProductName] is a per-user application. Setup will now exit.">
+			NOT ALLUSERS
+		</Condition> 
+		<Property Id="WixShellExecTarget" Value="[#WebbIE4.exe]" />
+		<CustomAction Id="LaunchApplication" BinaryKey="WixCA" DllEntry="WixShellExec" Impersonate="yes" />
+    </Product>
+</Wix>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?define VSProjectPath="C:\Users\Alasdair\SkyDrive\Projects\" ?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Bundle Name="WebbIE 4" Version="4.1.0.0" Manufacturer="Accessible and WebbIE" 
+          HelpUrl="http://www.webbie.org.uk"
+          UpgradeCode="e83a8faa-65c9-4437-8181-da0021503072"
+          Compressed="no">
+		<BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" />
+
+		<Chain>
+
+      <MsiPackage
+          SourceFile="$(var.VSProjectPath)BBCIPlayerRadio\Installer\BBCIPlayerRadio.msi"
+          Compressed="no"
+          DownloadUrl="http://www.webbie.org.uk/bbciplayerradio/BBCIPlayerRadio.msi">
+        <MsiProperty Name="SUPPRESS_START" Value="1"/>
+      </MsiPackage>
+      <!-- <MsiPackage SourceFile="$(var.VSProjectPath)BBCIPlayerTV\Installer\BBCIPlayerTV7.msi" 
+                  DownloadUrl="http://www.webbie.org.uk/bbciplayertv/BBCIPlayerTV7.msi"
+                  Compressed="no">
+        <MsiProperty Name="SUPPRESS_START" Value="1"/>
+      </MsiPackage>
+      <MsiPackage SourceFile="$(var.VSProjectPath)BBCLiveRadio\Installer\BBCLiveRadio2.msi"
+                  DownloadUrl="http://www.webbie.org.uk/bbciplayertv/BBCLiveRadio2.msi"
+                  Compressed="no">
+        <MsiProperty Name="SUPPRESS_START" Value="1"/>
+      </MsiPackage>
+      <MsiPackage SourceFile="$(var.VSProjectPath)Calendar\VB6 Installer\calendar.msi" 
+                  DownloadUrl="http://www.webbie.org.uk/bbciplayertv/calendar.msi"
+                  Compressed="no">
+        <MsiProperty Name="SUPPRESS_START" Value="1"/>
+      </MsiPackage>-->
+
+
+    </Chain>
+	</Bundle>
+</Wix>
