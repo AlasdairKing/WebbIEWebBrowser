@@ -90,7 +90,7 @@
     <Reference Include="UIAutomationClient" />
     <Reference Include="UIAutomationTypes" />
     <Reference Include="WebbIEUpdater">
-      <HintPath>..\..\BBCiPlayerTV\WebbIEUpdater\bin\Release\WebbIEUpdater.dll</HintPath>
+      <HintPath>..\Common\WebbIEUpdater.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>

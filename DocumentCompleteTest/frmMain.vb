@@ -94,7 +94,7 @@
     End Sub
 
     Private Sub txtOutput_KeyDown(sender As Object, e As KeyEventArgs) Handles txtOutput.KeyDown
-        If e.KeyCode = Keys.KeyCode.Return Then
+        If e.KeyCode = System.Windows.Forms.Keys.KeyCode.Return Then
             Dim lineNumber As Int16 = txtOutput.GetLineFromCharIndex(txtOutput.SelectionStart)
             'System.Diagnostics.Debug.Print("Line:" & lineNumber)
             Dim line As String = txtOutput.Lines(lineNumber).Trim()
